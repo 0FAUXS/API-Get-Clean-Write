@@ -86,7 +86,7 @@ plt.xticks(rotation=45)
 
 #WRITE IT...
 
-pathFOREX = '/Users/Lumin/Desktop/4449 Capstone/FOREX data'
+pathFOREX = 'your most wonderful pathway to data storage'
 os.makedirs(pathFOREX, exist_ok = True)
 fp = os.path.join(pathFOREX, "AUDUSDdf19_23.csv")
 AUDUSDdf.to_csv(fp)
