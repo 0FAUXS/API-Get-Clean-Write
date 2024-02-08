@@ -8,6 +8,11 @@ Created on Thu Feb  8 13:26:09 2024
 """
 
 
+
+#GET IT...
+
+# pip install tradingeconomics
+
 import os
 import pandas as pd
 import tradermade as tm
@@ -57,11 +62,12 @@ def main():
   
 if __name__=="__main__":    
     main()
-    
-#Check it...always
+
+
+#CLEAN IT... 
+
 print(len(pairDFList), len(nameList))
 print(nameList)
-
 
 AUDUSDdf = pd.concat(pairDFList) 
 AUDUSDdf = AUDUSDdf.drop_duplicates()
@@ -76,6 +82,9 @@ AUDUSDdf.info()
 AUDUSDdf.plot(kind='line')
 plt.title("First Look at AUDUSD")
 plt.xticks(rotation=45)
+
+
+#WRITE IT...
 
 pathFOREX = '/Users/Lumin/Desktop/4449 Capstone/FOREX data'
 os.makedirs(pathFOREX, exist_ok = True)
