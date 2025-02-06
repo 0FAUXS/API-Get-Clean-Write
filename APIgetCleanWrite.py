@@ -20,8 +20,8 @@ import matplotlib.pyplot as plt
 
 #Set the rest API key:
 #https://tradermade.com
-tm.set_rest_api_key("OGDUkhnf0DePHC-9nObb")
-api_key = "OGDUkhnf0DePHC-9nObb"
+tm.set_rest_api_key("x")
+api_key = "x"
 
 
 #Get the list of currency from the API, serves two purposes, [1] if you need to know the currency code for your trading pair, [2] you have established that the connection and transfer of data is working. 
